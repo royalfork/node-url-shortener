@@ -2,7 +2,7 @@ module.exports = function (app, nus) {
   var opts = app.get('opts');
 
   app.route('/').all(function (req, res) {
-    res.render('index');
+    res.redirect(301, "http://www.royalforkblog.com");
   });
 
   app.route('/api/v1/shorten')
